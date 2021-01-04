@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body{
+			height: 100vh;
+			background-image: linear-gradient(to right, #a18cd1 0%, #fbc2eb 100%);
+		}
+		.loading {
+			width: 20px; height: 100px;
+			position: absolute;
+			left: 50%; top: 50%;
+			transform: translate(-50%, -50%);
+			animation: loading  ease 2.23s  infinite;
+		}
+		.loading .circle1 {
+			width: 20px; height: 20px;
+			background: #000;
+			border-radius: 50%;
+		}
+		.loading .circle2 {
+			width: 20px; height: 20px;
+			background: #000;
+			border-radius: 50%;
+			margin-top: 60px;
+		}
+		@keyframes loading {
+			0% {transform: rotate(0deg);}
+			100% {transform: rotate(360deg);}
+		}
+
+	</style>
+</head>
+<body>
+	<div class="loading">
+		<div class="circle1"></div>
+		<div class="circle2"></div>
+	</div>
+</body>
+</html>

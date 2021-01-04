@@ -1,0 +1,122 @@
+@media (max-width:1400px) {
+	.sec01 .page_right {position: absolute; top: 0; left: 5%;}
+}
+@media (max-width:1300px) {
+	.sec01 .page_right {position: absolute; top: 0; left: 1%;}
+	.sec01 .page {margin: 1% 0 0 10%;}
+	.sec02 .page {margin: 1% 0 0 5%;}
+	.sec03 .page {margin: 1% 0 0 5%;}
+	.sec04 .page {margin: 1% 0 0 5%;}
+	.sec05 .page {margin: 1% 0 0 5%;}
+	.sec06 .page {margin: 1% 0 0 5%;}
+
+	/* section02 */
+	.sec02 .about {left: 52%;}
+
+}
+@media (max-width:1200px){
+		/* section02 */
+	.sec02 .profile li {font-size: 15px;}
+	.sec02 .skill li p {width: 307px; padding-bottom: 13px;}
+	.sec02 .skill li:last-child p {width: 250px; margin-bottom: 12px;}
+}
+
+@media (max-width:1020px){
+	.sec01 .page {width: 400px;}
+	.sec01 .page_right {position: absolute; top: 0; left: -19%;}
+	.sec01 .page .bar span{position: absolute; top: 423px; left: 30px; width: 145px; height: 52px; background: url("../img/bar01.png") no-repeat; background-size: 100%; transition: background 1s ease; }
+	.sec01 .page .name {top: 166px; left: 108px;}
+
+	.sec02 .page {width: 400px;}
+	.sec02 .aboutTxt .aboutPhoto span {width: 340px;}
+	.sec02 .aboutTxt .aboutInfo {top: 505px; left: 20px; width: 360px;}
+	.sec02 .about {left: 48%;}
+
+	.sec03 .page {width: 400px;}
+	.sec04 .page {width: 400px;}
+	.sec05 .page {width: 400px;}
+	.sec06 .page {width: 400px;}
+	.sec06 .page .text {font-size: 48px;}
+
+	.sec03 .about {left: 50%;}
+	.sec04 .about {left: 50%;}
+	.sec05 .about {left: 50%;}
+	.sec06 .about {left: 50%;}
+}
+@media (max-width:920px){
+	.sec01 .page .portpolio span {top: 72px; width: 260px;}
+	.sec01 .page .name {top: 106px;}
+	.sec01 .page .name {font-size: 42px;}
+	.sec01 .page .name span {top: 46px; left: 8px; font-size: 39px;}
+	.sec01 .page .name p {top: 131px; left: -48px; font-size: 10px;}
+	.sec01 .page .name p span {top: 18px; left: -24px; font-size: 10px;}
+	.sec01 .page .bar span {top: 303px;}
+
+	.sec01 .page_right {position: absolute; top: 0; left: -40%;}
+	.sec01 .page .smail {top: -200px;}
+	.sec02 .aboutTxt .aboutPhoto span {width: 248px;}
+	.sec02 .aboutTxt .aboutInfo {top: 400px; width: 264px;}
+
+
+	.sec01 .page {width: 300px;}
+	.sec02 .page {width: 300px;}
+	.sec03 .page {width: 300px;}
+	.sec04 .page {width: 300px;}
+	.sec05 .page {width: 300px;}
+	.sec06 .page {width: 300px;}
+
+	.sec06 .page .text {top: 130px;}
+
+	.sec03 .about .view_btn {top: 238px;}
+	.sec04 .about .view_btn {top: 238px;}
+	.sec05 .about .view_btn {top: 238px;}
+	.sec06 .about .view_btn {top: 238px;}
+}
+
+@media (max-width:860px) {
+	.sec01 .page .smail span{left: 600px; top: -120px; background-size: 70%; }
+	.sec01 .page .smail:hover span {background-size: 70%;}
+	.sec01 .page_right .light {position: absolute; top: -600px; left: 500px; background-size: 140%;}
+
+	.sec02 .aboutTxt .aboutInfo {top: 372px; font-size: 10px;}
+	.sec02 .about {top: 95%; left: 10%;}
+	.sec02 .skill {display: none}
+	.sec02 .about .profile {font-size: 15px;}
+	.sec02 .about .profile li {font-size: 10px;}
+	.sec02 .about .profile_name	{font-size: 10px; font-weight: bold; letter-spacing: 4px;}
+	.sec02 .about .education {font-size: 10px; font-weight: bold; letter-spacing: 4px;}
+
+	.sec03 .about {top: 65%; left: 10%;}
+	.sec03 .about .title {font-size: 25px;}
+	.sec03 .about .text {font-size: 12px;}
+	.sec03 .about .view_btn {top: 180px;}
+	.sec03 .about .view_btn a span {width: 150px;}
+
+	.sec04 .about {top: 65%; left: 10%;}
+	.sec04 .about .title {font-size: 25px;}
+	.sec04 .about .text {font-size: 12px;}
+	.sec04 .about .view_btn {top: 180px;}
+	.sec04 .about .view_btn a span {width: 150px;}
+
+	.sec05 .about {top: 65%; left: 10%;}
+	.sec05 .about .title {font-size: 25px;}
+	.sec05 .about .text {font-size: 12px;}
+	.sec05 .about .view_btn {top: 180px;}
+	.sec05 .about .view_btn a span {width: 150px;}
+
+	.sec06 .about {top: 65%; left: 10%;}
+	.sec06 .about .title {font-size: 25px;}
+	.sec06 .about .text {font-size: 12px;}
+	.sec06 .about .view_btn {top: 180px;}
+	.sec06 .about .gotop a span {width: 150px;}
+}
+
+@media (max-width:760px){
+	.sec01 .page .smail span{left: 600px; top: -120px; background-size: 70%; }
+	.sec01 .page .smail:hover span {background-size: 70%;}
+	.sec01 .page_right .light {position: absolute; top: -600px; left: 500px; background-size: 140%;}
+}
+@media (max-width:660px){
+	.sec01 .page .smail span{left: 600px; top: -120px; left: 500px; background-size: 70%; }
+	.sec01 .page_right .light {display: none;}
+}

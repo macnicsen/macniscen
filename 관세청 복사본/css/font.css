@@ -1,0 +1,10 @@
+/* 폰트 */
+@charset "UTF-8";
+@font-face {
+	font-family: "MalgunGothic";
+	src: url("/font/malgun.ttf");
+}
+@font-face {
+	font-family: "NotosansKR";
+	src: url("/font/NotoSansKR-Medium.otf");
+}

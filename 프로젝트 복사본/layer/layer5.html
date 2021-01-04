@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrap {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        body {
+            background-color: lightcyan;
+        }
+
+        header {
+            width: 100%;
+            height: 100px;
+            background-color: lightseagreen;
+        }
+
+        aside {
+            float: left;
+            width: 30%;
+            height: 900px;
+            background-color: lightgreen;
+        }
+
+        .article1 {
+            float: left;
+            width: 70%;
+            height: 300px;
+            background-color: lightpink;
+        }
+
+        .article2 {
+            float: left;
+            width: 70%;
+            height: 300px;
+            background-color: rgb(119, 54, 63);
+        }
+
+        .article3 {
+            float: left;
+            width: 70%;
+            height: 300px;
+            background-color: rgb(92, 29, 39);
+        }
+
+        footer {
+            clear: both;
+            width: 100%;
+            height: 100px;
+            background-color: lightsalmon;
+        }
+
+        @media (max-width: 1220px) {
+            #wrap {
+                width: 100%;
+            }
+
+            .article1 {
+                height: 450px;
+            }
+
+            .article2 {
+                height: 450px;
+            }
+
+            .article3 {
+                clear: both;
+                width: 100%;
+            }
+        }
+
+        @media (max-width:768px) {
+            aside {
+                width: 100%;
+                height: 300px;
+            }
+
+            .article1 {
+                width: 50%;
+            }
+
+            .article2 {
+                width: 50%;
+            }
+        }
+
+        @media (max-width:480px) {
+            .article1 {
+                width: 100%;
+                height: 300px;
+            }
+
+            .article2 {
+                width: 100%;
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <header></header>
+        <aside></aside>
+        <section class="article1"></section>
+        <section class="article2"></section>
+        <section class="article3"></section>
+        <footer></footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="https://fonts.googleapis.com/css?family=Jua&display=swap" rel="stylesheet">
+
+	<style>
+		body {
+			height: 100vh;
+			background: linear-gradient(120deg, #2C5364, #203A43, #0F2027);
+			font-family: 'Jua', sans-serif;
+		}
+		.hover_wrap {
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			perspective: 1000px;
+		}
+		.hover_wrap .effect {
+			position: relative;
+			width: 400px; height: 300px; margin: 10px;
+		}
+		.hover_wrap .effect figcaption h3 {
+			font-size: 24px; padding-bottom: 5px;
+		}
+		.hover_wrap .effect figcaption p {
+			font-size: 20px;
+		}
+		.hover_wrap .effect .front {position: absolute; top: 0; left: 0; z-index: 10;}
+		.hover_wrap .effect .back { position: absolute; top: 0; left: 0;}
+		.hover_wrap .effect figcaption { position: absolute; bottom: 0; left: 0; background: rgba(0, 0, 0, 0.5); width: 100%; padding:  3% 4%; box-sizing: border-box; color: #fff;}
+		.hover_wrap .effect img {width: 100%; display: block;}
+
+		/* Media quary */
+		@media (max-width:600px){
+			.hover_wrap {flex-direction: column;}
+		}
+		/* hover */
+		.hover_wrap .effect.hover7 .front {
+			transform: rotateY(0deg);
+			transition: transform 1s;
+		
+		}
+		.hover_wrap .effect.hover7:hover .front {
+			transform: rotateY(180deg);
+		}
+		.hover_wrap .effect.hover7 .back {
+			transform: rotateY(-180deg);
+			transition: transform 1s;
+		}
+
+		.hover_wrap .effect.hover7:hover .back {
+			transform: rotateY(0deg);
+		}
+		/* hover 8 */
+		.hover_wrap .effect.hover8 .front {
+			transform: rotatex(0deg);
+			transition: transform 1s;
+		}
+		.hover_wrap .effect.effect.hover8:hover .front {
+			transform: rotatex(180deg);
+			
+		}
+		.hover_wrap .effect.hover8 .back {	transform: rotatex(0deg);
+			transition: transform 1s;}
+		.hover_wrap .effect.hover8:hover .back {transform: rotatex(180deg);}
+
+	</style>
+</head>
+<body>
+		
+	<div class="hover_wrap">
+		<div class="effect hover7">
+			<figure class="front">
+				<img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/hover03.jpg" alt="앞면 이미지">
+				<figcaption>
+					<h3>Mouse Hover</h3>
+					<p>마우스 오버 이펙트 앞면입니다.</p>
+				</figcaption>
+			</figure>
+			<figure class="back">
+				<img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/hover04.jpg" alt="뒷면 이미지">
+				<figcaption>
+					<h3>Mouse Hover</h3>
+					<p>마우스 오버 이펙트 뒷면입니다.</p>
+				</figcaption>
+			</figure>
+		</div>
+		<div class="effect hover8">
+			<figure class="front">
+				<img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/hover04.jpg" alt="앞면 이미지">
+				<figcaption>
+					<h3>Mouse Hover</h3>
+					<p>마우스 오버 이펙트 앞면입니다.</p>
+				</figcaption>
+			</figure>
+			<figure class="back">
+				<img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/hover03.jpg" alt="뒷면 이미지">
+				<figcaption>
+					<h3>Mouse Hover</h3>
+					<p>마우스 오버 이펙트 뒷면입니다.</p>
+				</figcaption>
+			</figure>
+		</div>
+	</div>
+	
+</body>
+</html>

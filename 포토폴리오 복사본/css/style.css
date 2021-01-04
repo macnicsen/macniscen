@@ -1,0 +1,116 @@
+@charset "utf-8";
+/* dot */
+#dot {position: fixed; top: 50%; right: 20px; transform: translateY(-50%); z-index: 2;}
+#dot li {position: relative;width: 15px; height: 15px; margin: 15px 12px;}
+#dot li a {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: #333; background-color: rgba(0, 0, 0, 0.3); border-radius: 50%; border: 2px solid #222; transition: border-color 0.3s ease;}
+#dot li a::after {content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; visibility: hidden; background: #333; border-radius: 50%; box-shadow: 0 0 1px #222; transform: scale(3); transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0.3s;} 
+#dot li.active a:after {opacity: 1; visibility: visible; transform: scale(1); transition: opacity 0.3s ease, transform 0.3s ease;}
+#dot li a em {display: none;}
+
+/* container */
+.container {position: absolute; top: 180px; left: 0; width: 100%; height: 60vh; margin: 0 auto;}
+
+/* section */
+#section {position: relative; text-align: center; color: #fff; }
+section > div {height: 100vh; }
+
+/* section01 */
+.sec01 {background: url("../img/background.png") no-repeat; background-size: cover; }
+.sec01 .page {width: 450px; height: 600px; background: url("../img/page.png") no-repeat; background-size: 100%; margin: 1% 0 0 25%;}
+.sec01 .page ul {position: relative;}
+.sec01 .page .portpolio span{position: absolute; top: 113px; left: -62px; width: 310px; height: 60px; background: url("../img/portfolio.png") no-repeat; background-size: 100%; transition: background 1.2s ease;}
+.sec01 .page .portpolio span:hover {background: url("../img/portfolio02.png") no-repeat; background-size: 100%; }
+.sec01 .page .bar span{position: absolute; top: 482px; left: 33px; width: 145px; height: 52px; background: url("../img/bar01.png") no-repeat; background-size: 100%; transition: all 1s ease; }
+.sec01 .page .bar span:hover{background: url("../img/bar02.png") no-repeat; background-size: 100%;}
+.sec01 .page .name {position: absolute; top: 180px; left: 150px;  width: 100px; height: 50px; font-size: 64px; color: #222;  font-weight: 600;}
+.sec01 .page .name span {position: absolute; top: 70px; left: 0px; width: 100px; height: 50px; font-size: 64px; color: #222;  font-weight: 600;}
+.sec01 .page .name p {position: absolute; top: 190px; left: 0px; width: 280px; height: 50px; font-size: 15px; color: #222; }
+.sec01 .page .name p span {position: absolute; top: 35px; left: -35px; width: 280px; height: 50px; font-size: 15px; color: #222; }
+
+.sec01 .page_right {position: absolute; top: 0; left: 20%;}
+.sec01 .page_right ul {position: relative;}
+.sec01 .page .smail span{position: absolute; top: 160px; left: 700px; width: 160px; height: 160px; background: url("../img/smail.png")no-repeat; background-size: 100%;  transition: all 1s ease;z-index: 2; }
+.sec01 .page .smail:hover span{ background: url("../img/angry.png")no-repeat;}
+.sec01 .page_right .light {position: absolute; top: -600px; left: 600px; width: 500px; height: 1500px; background: url("../img/light.png") no-repeat; background-size: 140%;}
+
+ 
+/* section02 */
+.sec02 {background: #a4c8d6}
+.sec02 .page { position: relative; width: 470px; height: 600px; background: url("../img/page02.png") no-repeat; background-size: 100%; margin: 1% 0 0 19%;}
+.sec02 .aboutTxt {display: block; width: 450px; height: 420px; }
+.sec02 .aboutTxt .aboutPhoto {position: absolute; top: 88px; left: 26px;}
+.sec02 .aboutTxt .aboutPhoto span{width: 411px; height: 334px; background: url("../img/aboutPhoto.jpeg") no-repeat; background-size: 100%;}
+.sec02 .aboutTxt .aboutInfo {position: absolute; top: 458px; left: 54px; width: 363px;}
+
+/* profile */
+.sec02 .about {position: absolute; top: 1%; left: 56%; text-align: left;}
+.sec02 .about .profile {position: relative; font-size: 18px;}
+.sec02 .about .profile_name	{font-size: 30px; font-weight: bold; letter-spacing: 4px;}
+.sec02 .about .education {font-size: 30px; font-weight: bold; letter-spacing: 4px;}
+
+/* skill */
+.sec02 .skill {margin-top: 5px;}
+.sec02 .skill p {font-size: 30px; margin-bottom: 5px;}
+.sec02 .skill li {position: relative; }
+.sec02 .skill li img{width: 40px; height: 50px; padding: 5px;}
+.sec02 .skill li P {position: absolute; top: 18px; left: 50px; width: 480px; height: 35px; margin-left: 10px; font-size: 14px; border-bottom: 2px solid #444;}
+.sec02 .skill li:last-child p {position: absolute; top: 18px; left: 100px; width: 428px; height: 35px; margin-left: 10px; font-size: 14px; border-bottom: 2px solid #444;}
+
+/* section03 */
+.sec03 {background: #a4d6c9;}
+.sec03 .page { position: relative; width: 470px; height: 600px; background: url("../img/page03.png") no-repeat; background-size: 100%; margin: 1% 0 0 19%;}
+.sec03 .page .picture {width: 470px; height: 600px; }
+.sec03 .page .picture span {position: absolute; top: 100px; left: 20px; display: block; width: 100%; height: 100%; background: url("../img/port01.png") no-repeat; background-size: 100%;}
+.sec03 .about {position: absolute; top: 14%; left: 56%; text-align: left;}
+.sec03 .about ul {position: relative; width: 400px;}
+.sec03 .about .title {font-size:35px; text-transform: uppercase; font-weight: bold;}
+.sec03 .about .text {margin-top: 30px; font-size: 15px;}
+.sec03 .about .view_btn {position: absolute; top: 300px; left: 0; width: 150px; height: 100px;}
+.sec03 .about .view_btn a span {width: 200px; height: 80px; background: url("../img/sec03_btn01.png") no-repeat; background-size: 100%; transition: background 1s ease; }
+.sec03 .about .view_btn a:hover span {background: url("../img/sec03_btn02.png") no-repeat; background-size: 100%;}
+
+
+
+/* section04 */
+.sec04 {background: #c9d6a4;}
+.sec04 .page { position: relative; width: 470px; height: 600px; background: url("../img/page04.png") no-repeat; background-size: 100%; margin: 1% 0 0 19%;}
+.sec04 .page .picture {width: 470px; height: 600px; }
+.sec04 .page .picture span {position: absolute; top: 100px; left: -10px; display: block; width: 100%; height: 100%; background: url("../img/port02.png") no-repeat;  background-size: 100%;}
+.sec04 .about {position: absolute; top: 14%; left: 56%; text-align: left;}
+.sec04 .about ul {position: relative; width: 400px;}
+.sec04 .about .title {font-size:35px; text-transform: uppercase; font-weight: bold;}
+.sec04 .about .text {margin-top: 30px; font-size: 15px;}
+.sec04 .about .view_btn {position: absolute; top: 300px; left: 0; width: 150px; height: 100px;}
+.sec04 .about .view_btn a span {width: 200px; height: 800px; background: url("../img/sec04_btn01.png") no-repeat; background-size: 100%;transition: background 1s ease; }
+.sec04 .about .view_btn a:hover span {background: url("../img/sec04_btn02.png") no-repeat; background-size: 100%;}
+
+
+/* section05 */
+.sec05 {background: #d6baa4;}
+.sec05 .page { position: relative; width: 470px; height: 600px; background: url("../img/page05.png") no-repeat; background-size: 100%; margin: 1% 0 0 19%;}
+.sec05 .page .picture {width: 470px; height: 600px; }
+.sec05 .page .picture span {position: absolute; top: 100px; left: -10px; display: block; width: 100%; height: 100%; background: url("../img/port03.png") no-repeat;  background-size: 100%;}
+.sec05 .about {position: absolute; top: 14%; left: 56%; text-align: left;}
+.sec05 .about ul {position: relative; width: 400px;}
+.sec05 .about .title {font-size:35px; text-transform: uppercase; font-weight: bold;}
+.sec05 .about .text {margin-top: 30px; font-size: 15px;}
+.sec05 .about .view_btn {position: absolute; top: 300px; left: 0px; width: 150px; height: 100px;}
+.sec05 .about .view_btn a span {width: 200px; height: 80px; background: url("../img/sec05_btn01.png") no-repeat; background-size: 100%; transition: background 1s ease; }
+.sec05 .about .view_btn a:hover span {background: url("../img/sec05_btn02.png") no-repeat; background-size: 100%;}
+
+
+
+/* section06 */
+.sec06 {background: #d6a4a4;}
+.sec06 .page { position: relative; width: 470px; height: 600px; background: url("../img/page06.png") no-repeat; background-size: 100%; margin: 1% 0 0 19%;transition: background 2.5s ease-in-out ;}
+.sec06 .page .text{position: absolute; top: 200px; left: 0; font-size: 60px; font-weight: bold; color: #323031;}
+.sec06 .about {position: absolute; top: 20%; left: 56%; text-align: left;}
+.sec06 .about ul {position: relative; width: 400px;}
+.sec06 .about li {margin-bottom: 20px;}
+.sec06 .about .text {width: 400px; height: 50px; font-size: 18px; border-bottom: #222 1px solid; }
+.sec06 .about .email {width: 40px; height: 40px; background: url("../img/email.png") no-repeat; background-size: 100%;} 
+.sec06 .about .email p {width: 230px; height: 50px; margin-left: 50px; font-size: 18px;}
+.sec06 .about .kakako {width: 40px; height: 40px; background: url("../img/kakao.png") no-repeat; background-size: 100%;} 
+.sec06 .about .kakako p {width: 230px; height: 50px; margin-left: 50px; font-size: 18px;}
+.sec06 .about .gotop a span {width: 200px; height: 80px; background: url("../img/gotop01.png") no-repeat; background-size: 100%;  transition: background 1s ease; }
+.sec06 .about .gotop a:hover span {background: url("../img/gotop02.png") no-repeat; background-size: 100%;   }

@@ -1,0 +1,246 @@
+/* planet */
+@keyframes planet {
+	0%{transform: rotate(0deg);}
+	100%{transform: rotate(360deg);}
+}
+/* spaceship */
+@keyframes spaceship {
+	0%{top: 620px; left: 1000px;}
+	50%{top: 650px; left: 1020px;}
+	100%{top: 620px; left: 1000px;}
+}
+/* satellite */
+@keyframes satellite {
+	0%{transform: rotate(0deg);}
+	25%{transform: rotate(40deg);}
+	50%{transform: rotate(0deg);}
+	75%{transform: rotate(-20deg);}
+	100%{transform: rotate(0deg);}
+}
+/* star */
+@keyframes star {
+	0% {opacity: 1;}
+	50% {opacity: 0.2;}
+	100% {opacity: 1;}
+}
+/* rocket */
+@keyframes rocket {
+	0% {top: 66.5vh; left: 935px;}
+	50% {top: 52.5vh; left: 988px;}
+	100% {top: 66.5vh; left: 935px;}
+}
+/* smoke */
+@keyframes smoke {
+	0% {top: 72.5vh; left: 832px; opacity: 0.2;}
+	50% {top: 62.2vh; left: 872px; opacity: 1;}
+	100% {top: 72.5vh; left: 832px; opacity: 0.1;}
+}
+
+/* animation */
+#section6 .animation {position: relative;}
+#section6 .animation .content-item-title {display: block; width: 400px; font-size: 80px; color: #fff; text-align: center; margin: 0 auto 120px; padding-top: 200px; border-bottom: 1px solid #fff;}
+#section6 .animation .animation_list div {display: inline-block;}
+
+/* ani01 */
+.animation .animation_list div { margin: 12px;}
+
+.animation .animation_list .ani01{	
+	position: relative;
+	background: #ffebee;
+	width: 370px;
+	height: 370px;
+	perspective: 1000px;
+	display: flex;
+	align-items: center;
+	justify-content: center;}
+	.cube {
+		position: absolute;
+		top: 130px;
+		left: 150px;
+		width: 80px; height: 80px;
+		transform-style: preserve-3d;
+		transform: rotatex(-20deg) rotatey(-140deg) translatez(0);
+		animation: rotate 8000ms linear infinite;
+	}
+	.cube div {
+		display:flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		top: 0; left: 0;
+		width: 80px; height: 80px;
+		opacity: 0.75;
+		color: #fff;
+	}
+	 .cube div:nth-child(1) {
+		background: #ffcc80;
+		transform: rotatex(90deg) translatey(-80px);
+		transform-origin: center top;
+		animation: top 4000ms ease-in-out 8000ms infinite;	
+	 }
+	 .cube div:nth-child(2) {
+		 background: #ffb74d; 
+		 transform: rotateX(-90deg) translateY(80px);
+		 transform-origin: center bottom; 	 
+		 animation: bottom 4000ms ease-in-out 8000ms infinite;	
+	 }
+	 .cube div:nth-child(3) {
+		 background: #ffa726; 
+		 transform: rotatey(-90deg) translatex(-80px);
+		 transform-origin: left center; 	 
+		 animation: left 4000ms ease-in-out 8000ms infinite;	
+	 }
+	 .cube div:nth-child(4) {
+		 background: #ff9800; 
+		 transform: rotatey(90deg) translatex(80px);
+		 transform-origin: right center; 	
+		 animation: right 4000ms ease-in-out 8000ms infinite;	 
+	 }
+	 .cube div:nth-child(5) {
+		 background: #fb8c00; 
+		 transform: rotatey(0deg) translatex(0px);
+		 transform-origin: center center; 	
+		 animation: front 4000ms ease-in-out 8000ms infinite;	 
+	 }
+	 .cube div:nth-child(6) {
+		background: #f57c00;
+		transform-origin: center center;
+		transform: rotateY(180deg) translatez(80px);	 
+		animation: back 4000ms ease-in-out 8000ms infinite;	
+	 }
+	 @keyframes rotate {
+		 0% {transform: rotateX(0) rotateY(0) rotateZ(0) translate(0);}
+		 100% {transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg) translate(0);}
+	 }
+	 @keyframes top {
+		0% {transform: rotateX(90deg) translateY(-80px) translateZ(0);}
+		50% {transform: rotateX(90deg) translateY(-80px) translateZ(80px);}
+		100% {transform: rotateX(90deg) translateY(-80px) translateZ(0);}
+	 }
+	 @keyframes bottom {
+		0%   {transform: rotatex(-90deg) translatey(80px) translatez(0);}
+		50%  {transform: rotatex(-90deg) translatey(80px) translatez(80px);}
+		100% {transform: rotatex(-90deg) translatey(80px) translatez(0);}
+	}
+
+	@keyframes left {
+		0%   {transform: rotateY(-90deg) translateX(-80px) scaleY(1);}
+		50%  {transform: rotateY(-90deg) translateX(-80px) scaleY(3);}
+		100% {transform: rotateY(-90deg) translateX(-80px) scaleY(1);}
+	}
+
+	@keyframes right {
+		0%   {transform: rotateY(90deg) translateX(80px) scaleY(1);}
+		50%  {transform: rotateY(90deg) translateX(80px) scaleY(3);}
+		100% {transform: rotateY(90deg) translateX(80px) scaleY(1);}
+	}
+	@keyframes front {
+		0%   {transform: rotatex(0deg) translateX(0px) scaleY(1);}
+		50%  {transform: rotatex(0deg) translateX(0px) scaleY(3);}
+		100% {transform: rotatex(0deg) translateX(0px) scaleY(1);}
+	}
+	@keyframes back {
+		0%   {transform: rotateY(180deg) translatez(80px) scaleY(1);}
+		50%  {transform: rotateY(180deg) translatez(80px) scaleY(3);}
+		100% {transform: rotateY(180deg) translatez(80px) scaleY(1);}
+	}
+
+	/* ani02 */
+	.animation .animation_list .ani02 {
+		position: relative;
+		width: 370px;
+		height: 370px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+	}
+	.circle {
+		position: absolute;
+		top: 150px;
+		left: 150px;
+		animation: movex 1s ease-in-out alternate infinite;
+	}
+	.circle div {
+		background: #fff;
+		width: 30px; height: 30px;
+		border-radius: 50%;
+		animation: movey 1s linear infinite;
+	}
+
+	.circle:nth-of-type(2) > div {
+		width: 20px; height: 20px; opacity: 0.8;
+	}
+	.circle:nth-of-type(3) > div {
+		width: 15px; height: 15px; opacity: 0.6;
+	}
+	.circle:nth-of-type(4) > div {
+		width: 10px; height: 10px; opacity: 0.4;
+	}
+	.circle:nth-of-type(5) > div {
+		width: 7px; height: 7px; opacity: 0.2;
+	}
+
+	.circle:nth-of-type(2),
+	.circle:nth-of-type(2) > div {animation-delay: 0.1s;}
+	.circle:nth-of-type(3),
+	.circle:nth-of-type(3) > div {animation-delay: 0.2s;}
+	.circle:nth-of-type(4),
+	.circle:nth-of-type(4) > div {animation-delay: 0.3s;}
+	.circle:nth-of-type(5),
+	.circle:nth-of-type(5) > div {animation-delay: 0.4s;}
+	
+
+	@keyframes movex{ 
+		0% {transform: translate(-100px, 0);}
+		100% {transform: translate(100px,0);}
+	}
+	@keyframes movey {
+		0% {transform: translate(0, 0);}
+		25% {transform: translate(0, -50px);}
+		50% {transform: translate(0,0);}
+		75% {transform: translate(0, 50px);}
+		100% {transform: translate(0,0);}
+	}
+	/* ani03 */
+	.animation .animation_list .ani03{
+		width: 370px; height: 370px;
+		background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+	}
+	.circles {
+		position: absolute; 
+		top: 5px;
+		left: 15px;
+	}
+	.row {
+		width: 350px;
+		display: flex;
+		flex: 0 1 100%;
+		height: 5px;
+	}
+	.ani03 .circle1 {
+		width: 10px; height: 10px;
+		background: #fff;
+		margin: 2px 6px;
+		border-radius: 50%;
+		transform-origin: top center;
+		animation: spin 1s linear infinite;
+	
+	}
+	@keyframes spin {
+	0%   {transform: rotate(0) scale(1.2)}
+	50%  {transform: rotate(180deg) scale(.9)}
+	100% {transform: rotate(360deg) scale(1.2)}
+}
+
+	.row:nth-child(1) .circle1 {animation-delay: 100ms;}
+	.row:nth-child(2) .circle1 {animation-delay: 200ms;}
+	.row:nth-child(3) .circle1 {animation-delay: 300ms;}
+	.row:nth-child(4) .circle1 {animation-delay: 400ms;}
+	.row:nth-child(5) .circle1 {animation-delay: 500ms;}
+	.row:nth-child(6) .circle1 {animation-delay: 600ms;}
+	.row:nth-child(7) .circle1 {animation-delay: 700ms;}
